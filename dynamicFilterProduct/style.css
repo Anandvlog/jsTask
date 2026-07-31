@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px 0px;
+}
+
+.container input {
+    width: 550px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.card {
+    padding: 25px 13px;
+    background: red;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 10px 0px;
+    flex-direction: column;
+}
+
+.searchForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#product_card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
