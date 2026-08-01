@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Tracker with Date Filter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="conatiner">
+      <form >
+        <div class="task_form">
+          <label for="taskname">Task Name</label>
+          <input type="name" name="taskname" id="taskname" placeholder="Task name.." required/>
+           <label for="status">Select a Status:</label>
+          <select name="status" id="status" required>
+            <option value="Upcomming">Upcomming</option>
+            <option value="Pending">Pending</option>
+            <option value="Completed">Completed</option>
+          </select>
+          <label for="deudate">Due date</label>
+          <input type="date" name="duedate" id="duedate" required/>
+          <button class="submit">Submit</button>
+        </div>
+      </form>
+     
+      <div class="filter_data">
+       <select name="taskFilter" id="taskFilter">
+            <option value="all" selected>All</option>
+            <option value="upcomming">Upcomming</option>
+            <option value="pending">Pending</option>
+            <option value="completed">Completed</option>
+          </select>
+   </div>
+      <div class="task_wrapper" id="task_wrapper">
+         <!-- <div class="card">
+            <h2>React</h2>
+            <p>Pending</p>
+            <span>23/04/2023</span>
+         </div> -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
