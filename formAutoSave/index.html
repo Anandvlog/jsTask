@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form AutoSave</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="userForm" class="userForm">
+        <div class="form_wrapper">
+          <label for="firstName">First Name</label>
+          <input type="text" name="firstName" id="firstName" />
+        </div>
+        <div class="form_wrapper">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="form_wrapper">
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="phone" id="phone" />
+        </div>
+        <div class="form_wrapper">
+          <label>Gender</label>
+
+          <label for="male">
+            <input type="radio" name="gender" value="male" id="male" />
+            Male
+          </label>
+
+          <label for="female">
+            <input type="radio" name="gender" value="female" id="female" />
+            Female
+          </label>
+        </div>
+        <div class="form_wrapper">
+          <label for="bio">Bio</label>
+          <textarea rows="5" cols="30" name="bio" id="bio"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
