@@ -23,7 +23,7 @@ body {
   gap: 20px;
   padding: 25px 25px;
   background: #000;
-  margin-top: 50px;
+  
   border-radius: 10px;
   color: #fff;
   align-items: start;
@@ -79,4 +79,9 @@ body {
 
 .filter_data{
   margin-bottom: 20px;
+}
+
+h1{
+  text-align: center;
+  margin: 40px 0px;
 }
