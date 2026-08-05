@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense-tracker</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body >
+
+    <header  class="bg-blue-600 text-white py-5 shadow">
+        <h1>Expense Tracker</h1>
+    </header>
+
+    <main <main class="max-w-5xl mx-auto p-6">
+        <form class="bg-white rounded-lg shadow-md p-6 grid grid-cols-1 md:grid-cols-2 gap-4" action="" id="form">
+            <div>
+                <label for="">Name:</label>
+                <input name="name" type="text" placeholder="Enter Expense name">
+            </div>
+            <div>
+                <label for="">Amount:</label>
+                <input name="amount"  type="number" placeholder="Enter Amount in Rupee">
+            </div>
+            <div>
+                <label for="">Date:</label>
+                <input name="date"  type="date" placeholder="Enter Date.">
+            </div>
+            <div>
+                <label for="">Category:</label>
+                <select class="border rounded-md px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500" name="category" id="">
+                    <option value="" disabled selected>-- select an options</option>
+                    <option value="food">Food</option>
+                    <option value="transport">Transport</option>
+                    <option value="shopping">Shopping</option><option value="bills">Bills</option><option value="entertainment">Entertainment</option>
+                    <option value="other">other</option>
+                </select>
+            </div>
+
+            <button  class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-md transition" type="submit">Add Expense</button>
+        </form>
+    </main>
+
+    <!-- Expense card -->
+
+    <section class="max-w-5xl mx-auto px-6 mt-8">
+        <h2 class="my-4">Expense</h2>
+    <div id="expenseContainer">
+        
+    </div>
+    </section>
+
+    <!-- getExpense montWise -->
+     <section class="max-w-5xl mx-auto px-6 mt-8 flex items-center gap-4">
+        <label for="month">Month: </label>
+        <select   class="border rounded-md px-3 py-2"  name="month" id="monthFilter">
+            <option value="" disabled selected>-- Select Month --</option>
+             <option value="01">January</option>
+  <option value="2">February</option>
+  <option value="3">March</option>
+  <option value="4">April</option>
+  <option value="5">May</option>
+  <option value="6">June</option>
+  <option value="7">July</option>
+  <option value="8">August</option>
+  <option value="9">September</option>
+  <option value="10">October</option>
+  <option value="11">November</option>
+  <option value="12">December</option>
+           
+        </select>
+     </section>
+
+     <h2
+    id="totalExpense"
+    class="max-w-5xl mx-auto px-6 mt-6 text-2xl font-bold text-green-600"
+>
+    Total: ₹0
+</h2>
+     <script src="index.js"></script>
+</body>
+</html>

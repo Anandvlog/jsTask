@@ -1,0 +1,26 @@
+export const students = [
+    {
+        id:1,
+        name:"shiv",
+        age:24,
+        marks:70,
+    },
+    {
+        id:2,
+        name:"adarsh",
+        age:50,
+        marks:100,
+    },
+    {
+        id:3,
+        name:"aman",
+        age:23,
+        marks:45,
+    },
+    {
+        id:4,
+        name:"pranav",
+        age:20,
+        marks:50,
+    }
+]
